@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/logo_transparent.png</file>
+        <file>img/Screenshot 2023-04-22 154437.png</file>
+        <file>img/Untitled_design-removebg-preview.png</file>
+        <file>img/Untitled design (1).png</file>
+        <file>img/football.png</file>
+        <file>img/wepik-export-20230424115440.png</file>
+        <file>img/wepik-export-20230424120105.png</file>
+        <file>img/wepik-export-20230424120735.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>admin_form</class>
+ <widget class="QDialog" name="admin_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>833</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(77, 17, 85);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="text">
+      <string>LOAD</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 4);</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="maximumSize">
+        <size>
+         <width>816</width>
+         <height>633</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QTabWidget:tab-bar
+{
+alignment:center;
+}
+
+QTabBar:tab:selected{
+
+	
+	background-color: rgb(0, 255, 135);
+	color: rgb(77, 17, 85);
+}</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Rounded</enum>
+       </property>
+       <property name="currentIndex">
+        <number>2</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="elideMode">
+        <enum>Qt::ElideNone</enum>
+       </property>
+       <widget class="QWidget" name="home">
+        <attribute name="title">
+         <string>Home</string>
+        </attribute>
+        <widget class="QLabel" name="GW_number">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>150</y>
+           <width>41</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sitka Small Semibold</family>
+           <pointsize>36</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="NEXt_GW">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>390</y>
+           <width>83</width>
+           <height>29</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string> NEXT_GW</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>180</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Rounded MT Bold</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Leagues</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>260</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Rounded MT Bold</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Teams</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>330</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Rounded MT Bold</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Players</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="leagues_num">
+         <property name="geometry">
+          <rect>
+           <x>700</x>
+           <y>180</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Rounded MT Bold</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>700</x>
+           <y>330</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Rounded MT Bold</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Leagues</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Teams_num">
+         <property name="geometry">
+          <rect>
+           <x>700</x>
+           <y>260</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Rounded MT Bold</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <zorder>NEXt_GW</zorder>
+        <zorder>label</zorder>
+        <zorder>label_2</zorder>
+        <zorder>label_3</zorder>
+        <zorder>leagues_num</zorder>
+        <zorder>label_5</zorder>
+        <zorder>Teams_num</zorder>
+        <zorder>GW_number</zorder>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>ADD  NEW LEAGUE</string>
+        </attribute>
+        <widget class="QLineEdit" name="league_new_name">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>130</y>
+           <width>211</width>
+           <height>28</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>130</y>
+           <width>131</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>New League name</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ADD">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>200</y>
+           <width>83</width>
+           <height>29</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ADD</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="edit_teams">
+        <attribute name="icon">
+         <iconset theme="go-home">
+          <normaloff>.</normaloff>.</iconset>
+        </attribute>
+        <attribute name="title">
+         <string>Edit Teams</string>
+        </attribute>
+        <widget class="QTabWidget" name="tabWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-10</y>
+           <width>811</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(77, 17, 85);</string>
+         </property>
+         <property name="tabPosition">
+          <enum>QTabWidget::East</enum>
+         </property>
+         <property name="tabShape">
+          <enum>QTabWidget::Triangular</enum>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>ADD NEW </string>
+          </attribute>
+          <widget class="QLineEdit" name="new_team_name">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>70</y>
+             <width>171</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player1">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>270</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>70</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Team Name</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="geometry">
+            <rect>
+             <x>660</x>
+             <y>510</y>
+             <width>83</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(123, 255, 35);</string>
+           </property>
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player0">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>190</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player2">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>340</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player3">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>410</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>190</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-1</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>190</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>player-6</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>480</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-5</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>410</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-4</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>350</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-3</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>270</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-2</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_20">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>480</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-10</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>410</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-9</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_22">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>350</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-8</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_23">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>270</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0,0,0,0%)</string>
+           </property>
+           <property name="text">
+            <string>player-7</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>540</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>player-11</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player4">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>480</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player9">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>480</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player10">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>540</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player7">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>350</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player8">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>410</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player5">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>190</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="player6">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>270</y>
+             <width>151</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="leagues">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>80</y>
+             <width>131</width>
+             <height>28</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>80</y>
+             <width>63</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Leagues</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>260</y>
+             <width>411</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font: 35pt &quot;Rockwell Condensed&quot;;</string>
+           </property>
+           <property name="text">
+            <string>FANTASY FOOTBALL</string>
+           </property>
+          </widget>
+          <zorder>label_11</zorder>
+          <zorder>new_team_name</zorder>
+          <zorder>player1</zorder>
+          <zorder>label_6</zorder>
+          <zorder>pushButton_2</zorder>
+          <zorder>player0</zorder>
+          <zorder>player2</zorder>
+          <zorder>player3</zorder>
+          <zorder>label_14</zorder>
+          <zorder>label_15</zorder>
+          <zorder>label_16</zorder>
+          <zorder>label_17</zorder>
+          <zorder>label_18</zorder>
+          <zorder>label_19</zorder>
+          <zorder>label_20</zorder>
+          <zorder>label_21</zorder>
+          <zorder>label_22</zorder>
+          <zorder>label_23</zorder>
+          <zorder>label_24</zorder>
+          <zorder>player4</zorder>
+          <zorder>player9</zorder>
+          <zorder>player10</zorder>
+          <zorder>player7</zorder>
+          <zorder>player8</zorder>
+          <zorder>player5</zorder>
+          <zorder>player6</zorder>
+          <zorder>leagues</zorder>
+          <zorder>label_7</zorder>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>EDIT TEAM</string>
+          </attribute>
+          <widget class="QComboBox" name="leagues_combo">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>90</y>
+             <width>231</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>90</y>
+             <width>63</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Leagues</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="teams">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>140</y>
+             <width>231</width>
+             <height>28</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>140</y>
+             <width>63</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Teams</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>400</y>
+             <width>83</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>save</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/img/img/logo_transparent.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>270</y>
+             <width>411</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font: 35pt &quot;Rockwell Condensed&quot;;
+background-color: rgba(0,0,0,0%)</string>
+           </property>
+           <property name="text">
+            <string>FANTASY FOOTBALL</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>230</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 1</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p1">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>230</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p2">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>300</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>300</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 2</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p3">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>380</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>440</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 4</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p9">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>450</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>380</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 3</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p8">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>380</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>290</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;background-color: rgba(0,0,0,0%)</string>
+           </property>
+           <property name="text">
+            <string>Player - 7</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p7">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>290</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_29">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>380</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 8</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p6">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>230</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_30">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>230</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 6</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p11">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>550</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p5">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>510</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p10">
+           <property name="geometry">
+            <rect>
+             <x>510</x>
+             <y>510</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="p4">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>440</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_31">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>510</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 10</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_32">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>560</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 11</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_33">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>520</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 5</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_34">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>450</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);font: 700 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Player - 9</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_35">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>330</y>
+             <width>121</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/img/img/football.png);
+background-color: rgba(0,0,0,0%)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="new_player">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>60</y>
+             <width>82</width>
+             <height>28</height>
+            </rect>
+           </property>
+          </widget>
+          <zorder>label_35</zorder>
+          <zorder>label_10</zorder>
+          <zorder>label_9</zorder>
+          <zorder>leagues_combo</zorder>
+          <zorder>label_8</zorder>
+          <zorder>teams</zorder>
+          <zorder>label_12</zorder>
+          <zorder>pushButton_4</zorder>
+          <zorder>label_13</zorder>
+          <zorder>p1</zorder>
+          <zorder>p2</zorder>
+          <zorder>label_25</zorder>
+          <zorder>p3</zorder>
+          <zorder>label_26</zorder>
+          <zorder>p9</zorder>
+          <zorder>label_27</zorder>
+          <zorder>p8</zorder>
+          <zorder>label_28</zorder>
+          <zorder>p7</zorder>
+          <zorder>label_29</zorder>
+          <zorder>p6</zorder>
+          <zorder>label_30</zorder>
+          <zorder>p11</zorder>
+          <zorder>p5</zorder>
+          <zorder>p10</zorder>
+          <zorder>p4</zorder>
+          <zorder>label_31</zorder>
+          <zorder>label_32</zorder>
+          <zorder>label_33</zorder>
+          <zorder>label_34</zorder>
+          <zorder>new_player</zorder>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="edit_goals">
+        <attribute name="title">
+         <string>EDIT GOALS</string>
+        </attribute>
+        <widget class="QComboBox" name="Teams_editgoals">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>110</y>
+           <width>161</width>
+           <height>28</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="leagues_edit_goals">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>20</y>
+           <width>161</width>
+           <height>28</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="player_editgoals">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>240</y>
+           <width>161</width>
+           <height>28</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>30</y>
+           <width>63</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Leagues</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>240</y>
+           <width>63</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>player</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>110</y>
+           <width>63</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Teams</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="player_name_edit_goals">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>380</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>g</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="player_name_edit_goals_2">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>330</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Goals</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="Goalsscored">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>370</y>
+           <width>48</width>
+           <height>29</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="savenewgoals">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>430</y>
+           <width>83</width>
+           <height>29</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">selection-background-color: rgb(1, 218, 88);</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="price_edit">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>370</y>
+           <width>67</width>
+           <height>29</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="player_name_edit_goals_5">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>330</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Price </string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_37">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 255, 135);</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
